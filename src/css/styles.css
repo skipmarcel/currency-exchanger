@@ -4,20 +4,30 @@ body {
 
 #ifYou {
   display: inline;
+  margin-bottom: 50px;
+}
+
+#yourDollar {
+  display: inline;
 }
 
 .dropbtn {
+  display: inline-block;
   background-color: #04aa6d;
   color: white;
   padding: 10px;
   font-size: 16px;
   border: none;
   border-radius: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
+  margin-top: -2%;
+  margin-left: -9%;
 }
 
 .dropdown-content {
