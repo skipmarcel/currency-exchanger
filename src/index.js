@@ -1,9 +1,15 @@
 import "./css/styles.css";
 import GetExchange from "./exchangeBl";
 
-GetExchange.exchangeInfo()
-  .then((data) => {
-    const exchangeRate = data.conversion_rates.USD;
-    document.getElementById("rate").textContent = exchangeRate;
-  })
-  .catch((error) => console.error(error));
+const dropdown = document.getElementById("country-dropdown");
+const rateSpan = document.getElementById("rate");
+
+dropdown.addEventListener("click", () => {
+  const selectedCountry = dropdown.value;
+  GetExchange.exchangeInfo()
+    .then((data) => {
+      const exchangeRate = data.conversion_rates[selectedCountry];
+      rateSpan.textContent = exchangeRate;
+    })
+    .catch((error) => console.error(error));
+});

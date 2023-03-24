@@ -15,4 +15,6 @@ export default class GetExchange {
         return error;
       });
   }
+
+  static rateDivision() {}
 }

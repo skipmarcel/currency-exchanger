@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Currency Exchaneg</title>
+    <title>Currency Exchange</title>
   </head>
   <body>
     <h1>Conversion Rate</h1>
 
-    <p id="rate"></p>
+    <h2>Considering your USD as $1</h2>
+<p id="ifYou">If you are using the</p>
+    <div class="dropdown">
+      <select class="dropbtn" id="country-dropdown">
+      <div class="dropdown-content">
+        <option value="AMD">Armenian dram</option>
+        <option value="AUD">Australian dollar</option>
+        <option value="BSD">Bahamian dollar</option>
+        <option value="BDT">Bangladeshi taka</option>
+        <option value="BBD">Barbados dollar</option>
+        <option value="BZD">Belize dollar</option>
+        <option value="BMD">Bermudian dollar</option>
+        <option value="BOB">Bolivian boliviano</option>
+        <option value="BWP">Botswana pula</option>
+        <option value="BRL">Brazilian real</option>
+        <option value="GBP">British pound</option>
+        <option value="BGN">Bulgarian lev</option>
+        <option value="KHR">Cambodian riel</option>
+        <option value="CAD">Canadian dollar</option>
+        <option value="KYD">Cayman Islands dollar</option>
+        <option value="CLP">Chilean peso</option>
+        <option value="CNY">Chinese yuan renminbi</option>
+        <option value="COP">Colombian peso</option>
+        <option value="CDF">Congolese franc</option>
+        <option value="CRC">Costa Rican colon</option>
+        <option value="HRK">Croatian kuna</option>
+        <option value="CUP">Cuban peso</option>
+        <option value="CZK">Czech koruna</option>
+        <option value="DKK">Danish krone</option>
+        <option value="DOP">Dominican peso</option>
+        <option value="XCD">East Caribbean dollar</option>
+        <option value="EGP">Egyptian pound</option>
+        <option value="SVC">El Salvador colon</option>
+        <option value="EEK">Estonian kroon</option>
+        <option value="ETB">Ethiopian birr</option>
+        <option value="EUR">EU euro</option>
+        <option value="FJD">Fiji dollar</option>
+        <option value="GTQ">Guatemalan quetzal</option>
+        <option value="GNF">Guinean franc</option>
+        <option value="HTG">Haitian gourde</option>
+        <option value="HNL">Honduran lempira</option>
+        <option value="HKD">Hong Kong SAR dollar</option>
+        <option value="HUF">Hungarian forint</option>
+        <option value="ISK">Icelandic krona</option>
+        <option value="INR">Indian rupee</option>
+        <option value="IDR">Indonesian rupiah</option> 
+        </select>    
+      </div>
+</div>
+<p>your dollar would be worth $<span id="rate"></span></p>
   </body>
 </html>
