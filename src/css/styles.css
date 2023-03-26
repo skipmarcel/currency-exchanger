@@ -24,10 +24,8 @@ body {
 }
 
 .dropdown {
-  position: absolute;
   display: inline-block;
-  margin-top: -2%;
-  margin-left: -9%;
+  border: none;
 }
 
 .dropdown-content {
